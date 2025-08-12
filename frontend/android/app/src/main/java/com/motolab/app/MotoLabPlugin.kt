@@ -95,7 +95,9 @@ class MotoLabPlugin : Plugin(), RecognitionListener {
     }
 
     override fun onResult(hypothesis: String?) {
-        // TODO: Implement onTranscription listener
+        val data = JSObject()
+        data.put("transcript", hypothesis)
+        notifyListeners("onTranscription", data)
     }
 
     override fun onPartialResult(hypothesis: String?) {

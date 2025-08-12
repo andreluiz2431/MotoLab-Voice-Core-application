@@ -106,7 +106,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*Listener `onTranscription`:\*\*
 
-&nbsp;       \* \[ ] Configurar o callback do Vosk para quando uma transcrição for gerada.
+&nbsp;       \* \[x] Configurar o callback do Vosk para quando uma transcrição for gerada. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Usar `notifyListeners("onTranscription", { transcript: "..." })` para enviar o texto ao frontend.
 
