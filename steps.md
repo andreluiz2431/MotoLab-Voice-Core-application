@@ -28,7 +28,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[x] Implementar o banco de dados SQLite com a tabela `oauth\_tokens`. - 2025-08-12 11:16:34
 
-&nbsp;   \* \[ ] Escolher e instalar uma biblioteca de criptografia (ex: `crypto` nativo).
+&nbsp;   \* \[x] Escolher e instalar uma biblioteca de criptografia (ex: `crypto` nativo). - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] Criar e configurar o arquivo `.env` com `JWT\_SECRET`, `GOOGLE\_CLIENT\_ID`, etc.
 
