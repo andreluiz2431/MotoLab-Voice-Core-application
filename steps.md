@@ -60,7 +60,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Salvar o `refresh\_token` criptografado e o `access\_token` no banco de dados, associados ao `deviceId`. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Retornar uma página/mensagem de sucesso para o usuário fechar a janela.
+&nbsp;       \* \[x] Retornar uma página/mensagem de sucesso para o usuário fechar a janela. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] \*\*Endpoint `GET /auth/status`:\*\*
 
