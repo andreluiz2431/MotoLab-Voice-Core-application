@@ -114,7 +114,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Interromper o reconhecimento do Vosk. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Desconectar o áudio SCO.
+&nbsp;       \* \[x] Desconectar o áudio SCO. - 2025-08-12 11:16:34
 
 
 
