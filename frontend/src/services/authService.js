@@ -11,3 +11,13 @@ export async function startOAuth(deviceId) {
     throw error;
   }
 }
+
+export async function checkAuthStatus(deviceId) {
+  try {
+    const response = await axios.get(`${BACKEND_URL}/auth/status?deviceId=${deviceId}`);
+    return response.data.authenticated;
+  } catch (error) {
+    console.error('Error checking authentication status:', error);
+    throw error;
+  }
+}
