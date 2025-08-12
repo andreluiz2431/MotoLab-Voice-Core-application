@@ -56,7 +56,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Usar o `code` para obter o `access\_token` e o `refresh\_token`. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Criptografar o `refresh\_token` recebido.
+&nbsp;       \* \[x] Criptografar o `refresh\_token` recebido. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Salvar o `refresh\_token` criptografado e o `access\_token` no banco de dados, associados ao `deviceId`.
 

@@ -1,5 +1,6 @@
 const express = require('express');
 const { google } = require('googleapis');
+const { encrypt } = require('../utils/encryption');
 const router = express.Router();
 
 const oauth2Client = new google.auth.OAuth2(
@@ -32,7 +33,8 @@ router.get('/oauth2callback', async (req, res) => {
 
   try {
     const { tokens } = await oauth2Client.getToken(code);
-    // TODO: Encrypt and save tokens linked to deviceId
+    const encryptedRefreshToken = encrypt(tokens.refresh_token);
+    // TODO: Save tokens linked to deviceId
     res.send('Autenticação concluída. Você pode fechar esta janela.');
   } catch (error) {
     console.error('Error retrieving access token:', error);
