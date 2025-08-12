@@ -158,7 +158,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \*\*Interação por Voz:\*\*
 
-&nbsp;       \* \[ ] Criar botões na UI para chamar `MotoLabPlugin.startCapture()` e `stopCapture()`.
+&nbsp;       \* \[x] Criar botões na UI para chamar `MotoLabPlugin.startCapture()` e `stopCapture()`. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Adicionar um listener para o evento `onTranscription` do plugin.
 

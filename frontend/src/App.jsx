@@ -5,6 +5,9 @@ import './App.css'
 import AuthButton from './components/AuthButton';
 import { getDeviceId } from './utils/device';
 import { checkAuthStatus } from './services/authService';
+import { Plugins } from '@capacitor/core';
+
+const { MotoLabPlugin } = Plugins;
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,6 +39,24 @@ function App() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const startVoiceCapture = async () => {
+    try {
+      await MotoLabPlugin.startCapture();
+      console.log('Voice capture started');
+    } catch (error) {
+      console.error('Error starting voice capture:', error);
+    }
+  };
+
+  const stopVoiceCapture = async () => {
+    try {
+      await MotoLabPlugin.stopCapture();
+      console.log('Voice capture stopped');
+    } catch (error) {
+      console.error('Error stopping voice capture:', error);
+    }
+  };
+
   return (
     <>
       <div>
@@ -59,7 +80,13 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       {!isAuthenticated && <AuthButton />}
-      {isAuthenticated && <p>User is authenticated!</p>}
+      {isAuthenticated && (
+        <div>
+          <p>User is authenticated!</p>
+          <button onClick={startVoiceCapture}>Start Voice Capture</button>
+          <button onClick={stopVoiceCapture}>Stop Voice Capture</button>
+        </div>
+      )}
     </>
   );
 }
