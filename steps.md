@@ -88,7 +88,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 \* \*\*Configuração e Permissões\*\*
 
-&nbsp;   \* \[ ] Adicionar dependências do Vosk e Capacitor no `build.gradle`.
+&nbsp;   \* \[x] Adicionar dependências do Vosk e Capacitor no `build.gradle`. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] Implementar a solicitação de permissões de `BLUETOOTH\_CONNECT` e `RECORD\_AUDIO` no Android.
 
