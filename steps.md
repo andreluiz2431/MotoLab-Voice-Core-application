@@ -26,7 +26,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[x] Configurar o projeto Node.js com Express. - 2025-08-12 11:16:34
 
-&nbsp;   \* \[ ] Implementar o banco de dados SQLite com a tabela `oauth\_tokens`.
+&nbsp;   \* \[x] Implementar o banco de dados SQLite com a tabela `oauth\_tokens`. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] Escolher e instalar uma biblioteca de criptografia (ex: `crypto` nativo).
 
