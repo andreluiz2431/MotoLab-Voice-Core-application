@@ -68,7 +68,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Validar o `deviceId` da query. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Consultar o banco de dados para verificar a existência de um token para o `deviceId`.
+&nbsp;       \* \[x] Consultar o banco de dados para verificar a existência de um token para o `deviceId`. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Retornar `{ authenticated: true/false }` baseado na consulta.
 
