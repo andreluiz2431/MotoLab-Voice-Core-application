@@ -8,4 +8,11 @@ router.post('/upload', (req, res) => {
   res.json({ message: 'Drive upload endpoint reached' });
 });
 
+router.get('/list', (req, res) => {
+  // TODO: Implement authentication/authorization
+  // TODO: Retrieve access_token from DB using deviceId
+  // TODO: Use Google Drive API to list files
+  res.json({ message: 'Drive list endpoint reached' });
+});
+
 module.exports = router;

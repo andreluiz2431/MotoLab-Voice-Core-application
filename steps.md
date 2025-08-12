@@ -78,7 +78,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[x] Criar uma rota protegida `POST /drive/upload`. - 2025-08-12 11:16:34
 
-&nbsp;   \* \[ ] Criar uma rota protegida `GET /drive/list`.
+&nbsp;   \* \[x] Criar uma rota protegida `GET /drive/list`. - 2025-08-12 11:16:34
 
 
 
