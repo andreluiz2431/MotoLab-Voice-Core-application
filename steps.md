@@ -30,7 +30,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[x] Escolher e instalar uma biblioteca de criptografia (ex: `crypto` nativo). - 2025-08-12 11:16:34
 
-&nbsp;   \* \[ ] Criar e configurar o arquivo `.env` com `JWT\_SECRET`, `GOOGLE\_CLIENT\_ID`, etc.
+&nbsp;   \* \[x] Criar e configurar o arquivo `.env` com `JWT\_SECRET`, `GOOGLE\_CLIENT\_ID`, etc. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] Criar funções `encrypt(text)` e `decrypt(text)` para os tokens.
 
