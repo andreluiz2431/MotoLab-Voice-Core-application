@@ -54,7 +54,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Extrair o `code` e `state` (deviceId) da resposta do Google. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Usar o `code` para obter o `access\_token` e o `refresh\_token`.
+&nbsp;       \* \[x] Usar o `code` para obter o `access\_token` e o `refresh\_token`. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Criptografar o `refresh\_token` recebido.
 
