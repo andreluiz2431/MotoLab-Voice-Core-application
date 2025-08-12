@@ -162,7 +162,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Adicionar um listener para o evento `onTranscription` do plugin. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Exibir a transcrição recebida em um campo de texto na tela.
+&nbsp;       \* \[x] Exibir a transcrição recebida em um campo de texto na tela. - 2025-08-12 11:16:34
 
 
 
