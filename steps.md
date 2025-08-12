@@ -64,7 +64,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*Endpoint `GET /auth/status`:\*\*
 
-&nbsp;       \* \[ ] Criar a rota `GET /auth/status`.
+&nbsp;       \* \[x] Criar a rota `GET /auth/status`. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Validar o `deviceId` da query.
 

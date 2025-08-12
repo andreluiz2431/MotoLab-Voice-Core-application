@@ -57,4 +57,20 @@ router.get('/oauth2callback', async (req, res) => {
   }
 });
 
+router.get('/status', (req, res) => {
+  const { deviceId } = req.query;
+  if (!deviceId) {
+    return res.status(400).json({ error: 'deviceId required' });
+  }
+
+  try {
+    const stmt = db.prepare('SELECT device_id FROM oauth_tokens WHERE device_id = ?');
+    const token = stmt.get(deviceId);
+    res.json({ authenticated: !!token });
+  } catch (error) {
+    console.error('Error checking authentication status:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 module.exports = router;
