@@ -134,7 +134,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*`authService.js`:\*\*
 
-&nbsp;       \* \[ ] Criar função `startOAuth(deviceId)` para chamar o endpoint `GET /auth/start` do backend.
+&nbsp;       \* \[x] Criar função `startOAuth(deviceId)` para chamar o endpoint `GET /auth/start` do backend. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Criar função `checkAuthStatus(deviceId)` para fazer polling no endpoint `GET /auth/status`.
 
