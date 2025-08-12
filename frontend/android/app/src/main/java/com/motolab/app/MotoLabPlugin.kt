@@ -1,6 +1,8 @@
 package com.motolab.app
 
 import android.Manifest
+import android.media.AudioManager
+import android.content.Context
 import com.getcapacitor.JSObject
 import com.getcapacitor.Plugin
 import com.getcapacitor.PluginCall
@@ -18,10 +20,19 @@ import com.getcapacitor.annotation.PermissionCallback
 )
 class MotoLabPlugin : Plugin() {
 
+    private var audioManager: AudioManager? = null
+
+    override fun load() {
+        super.load()
+        audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+    }
+
     @PluginMethod
     fun startCapture(call: PluginCall) {
         if (hasPermission("bluetoothConnect") && hasPermission("recordAudio")) {
             // Permissions already granted, proceed with capture
+            audioManager?.startBluetoothSco()
+            audioManager?.setBluetoothScoOn(true)
             call.resolve()
         } else {
             // Request permissions
@@ -32,6 +43,8 @@ class MotoLabPlugin : Plugin() {
     @PluginMethod
     fun stopCapture(call: PluginCall) {
         // Implement stop capture logic
+        audioManager?.stopBluetoothSco()
+        audioManager?.setBluetoothScoOn(false)
         call.resolve()
     }
 

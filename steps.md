@@ -98,7 +98,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*Método `startCapture()`:\*\*
 
-&nbsp;       \* \[ ] Implementar a lógica para iniciar a conexão de áudio Bluetooth (SCO).
+&nbsp;       \* \[x] Implementar a lógica para iniciar a conexão de áudio Bluetooth (SCO). - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Iniciar o serviço do Vosk-Android e prepará-lo para receber áudio.
 
