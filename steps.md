@@ -126,7 +126,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[x] Instalar dependências (`axios`, `@capacitor-community/sqlite`). - 2025-08-12 11:16:34
 
-&nbsp;   \* \[ ] Gerar e persistir um `deviceId` único no armazenamento local do app.
+&nbsp;   \* \[x] Gerar e persistir um `deviceId` único no armazenamento local do app. - 2025-08-12 11:16:34
 
 
 
