@@ -23,4 +23,21 @@ router.get('/start', (req, res) => {
   res.json({ authUrl });
 });
 
+router.get('/oauth2callback', async (req, res) => {
+  const { code, state } = req.query; // state = deviceId
+
+  if (!code || !state) {
+    return res.status(400).send('Missing code or state parameter.');
+  }
+
+  try {
+    const { tokens } = await oauth2Client.getToken(code);
+    // TODO: Encrypt and save tokens linked to deviceId
+    res.send('Autenticação concluída. Você pode fechar esta janela.');
+  } catch (error) {
+    console.error('Error retrieving access token:', error);
+    res.status(500).send('Authentication failed.');
+  }
+});
+
 module.exports = router;

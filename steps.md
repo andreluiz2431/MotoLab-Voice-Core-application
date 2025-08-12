@@ -50,7 +50,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*Endpoint `GET /oauth2callback`:\*\*
 
-&nbsp;       \* \[ ] Criar a rota `GET /oauth2callback`.
+&nbsp;       \* \[x] Criar a rota `GET /oauth2callback`. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Extrair o `code` e `state` (deviceId) da resposta do Google.
 
