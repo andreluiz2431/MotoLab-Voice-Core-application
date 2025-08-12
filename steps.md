@@ -102,7 +102,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Iniciar o serviço do Vosk-Android e prepará-lo para receber áudio. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Direcionar o stream de áudio do microfone para o Vosk.
+&nbsp;       \* \[x] Direcionar o stream de áudio do microfone para o Vosk. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] \*\*Listener `onTranscription`:\*\*
 
