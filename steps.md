@@ -140,7 +140,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*`driveService.js`:\*\*
 
-&nbsp;       \* \[ ] Criar funções (`listDriveFiles`, `uploadFile`) que fazem chamadas autenticadas (JWT) para os endpoints do backend.
+&nbsp;       \* \[x] Criar funções (`listDriveFiles`, `uploadFile`) que fazem chamadas autenticadas (JWT) para os endpoints do backend. - 2025-08-12 11:16:34
 
 
 
