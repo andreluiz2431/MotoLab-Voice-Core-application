@@ -1,7 +1,17 @@
 require('dotenv').config();
 
+const express = require('express');
 const db = require('./src/database');
+const authRoutes = require('./src/routes/auth');
 
-console.log('Database initialized and oauth_tokens table ensured.');
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-// This will be the main entry point for the Express app later
+app.use(express.json());
+
+app.use('/auth', authRoutes);
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  console.log('Database initialized and oauth_tokens table ensured.');
+});
