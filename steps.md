@@ -112,7 +112,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;   \* \[ ] \*\*Método `stopCapture()`:\*\*
 
-&nbsp;       \* \[ ] Interromper o reconhecimento do Vosk.
+&nbsp;       \* \[x] Interromper o reconhecimento do Vosk. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Desconectar o áudio SCO.
 
