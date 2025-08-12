@@ -1,6 +1,7 @@
 const express = require('express');
 const { google } = require('googleapis');
 const { encrypt } = require('../utils/encryption');
+const db = require('../database');
 const router = express.Router();
 
 const oauth2Client = new google.auth.OAuth2(
@@ -34,10 +35,24 @@ router.get('/oauth2callback', async (req, res) => {
   try {
     const { tokens } = await oauth2Client.getToken(code);
     const encryptedRefreshToken = encrypt(tokens.refresh_token);
-    // TODO: Save tokens linked to deviceId
+
+    // Save tokens to database
+    const stmt = db.prepare(
+      `INSERT OR REPLACE INTO oauth_tokens (
+        device_id, google_user_id, refresh_token_encrypted, access_token, expires_at
+      ) VALUES (?, ?, ?, ?, ?)`
+    );
+    stmt.run(
+      state, // deviceId
+      tokens.id_token, // Using id_token as google_user_id for now, will refine later if needed
+      encryptedRefreshToken,
+      tokens.access_token,
+      tokens.expiry_date
+    );
+
     res.send('Autenticação concluída. Você pode fechar esta janela.');
   } catch (error) {
-    console.error('Error retrieving access token:', error);
+    console.error('Error retrieving access token or saving to DB:', error);
     res.status(500).send('Authentication failed.');
   }
 });
