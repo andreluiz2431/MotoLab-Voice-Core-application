@@ -46,7 +46,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Gerar a `authUrl` do Google com `access\_type=offline`, o `scope` correto e o `deviceId` como `state`. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Retornar a `authUrl` em uma resposta JSON.
+&nbsp;       \* \[x] Retornar a `authUrl` em uma resposta JSON. - 2025-08-12 11:16:34
 
 &nbsp;   \* \[ ] \*\*Endpoint `GET /oauth2callback`:\*\*
 
