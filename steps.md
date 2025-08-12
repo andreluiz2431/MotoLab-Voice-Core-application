@@ -152,7 +152,7 @@ Este arquivo rastreia as tarefas de desenvolvimento do projeto MotoLab Voice Cor
 
 &nbsp;       \* \[x] Chamar `startOAuth` e abrir a `authUrl` retornada em uma Custom Tab. - 2025-08-12 11:16:34
 
-&nbsp;       \* \[ ] Iniciar o polling com `checkAuthStatus` após o usuário ser redirecionado de volta ao app.
+&nbsp;       \* \[x] Iniciar o polling com `checkAuthStatus` após o usuário ser redirecionado de volta ao app. - 2025-08-12 11:16:34
 
 &nbsp;       \* \[ ] Atualizar o estado da UI para refletir o status de `authenticated`.
 
